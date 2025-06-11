@@ -1,0 +1,120 @@
+/* === Home Section Styling === */
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
+  transition: background 0.4s ease;
+}
+
+[data-theme="dark"] .home {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+}
+
+/* === Home Content Layout === */
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* === Intro Text === */
+.home-text {
+  flex: 1;
+  min-width: 300px;
+  animation: slideInLeft 1s ease;
+}
+
+.home-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 1.2rem;
+}
+
+[data-theme="dark"] .home-text h1 {
+  color: #fff;
+}
+
+.home-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+[data-theme="dark"] .home-text p {
+  color: #ccc;
+}
+
+/* === Profile Image === */
+.home-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #0070f3;
+  box-shadow: 0 0 20px rgba(0, 112, 243, 0.2);
+  animation: float 3s ease-in-out infinite;
+}
+
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === Animations === */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .home {
+    padding: 2rem 1rem;
+  }
+
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .home-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+  }
+
+  .home-image {
+    width: 200px;
+    height: 200px;
+  }
+}

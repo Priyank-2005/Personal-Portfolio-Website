@@ -1,95 +1,28 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import '../styles/home.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <section className="home">
+      <div className="home-content">
+        <div className="home-text">
+          <h1>Hi, I'm Priyank Bohra</h1>
+          <p>
+            I'm a final-year B.Tech (Information and Communication Technology) student at Pandit Deendayal Energy University, currently in my 6th semester with a CGPA of 7.8. I specialize in front-end web development and have practical experience using technologies like HTML5, CSS3, JavaScript, and ReactJS. I’m deeply passionate about building interactive and visually appealing user interfaces that are both responsive and accessible across devices.
+          </p>
+          <p>
+            Over the past few semesters, I’ve worked on a range of projects including an e-learning coding platform and an AI-based healthcare diagnosis system. These projects have helped me grow not just as a developer, but as a problem-solver who can understand user needs and translate them into efficient, real-world applications. I’m also familiar with tools like Bootstrap, Tailwind CSS, Chrome DevTools, and have experience working with databases such as MySQL and MongoDB.
+          </p>
+          <p>
+            I am a quick learner, highly adaptable to new technologies, and love collaborating with others to bring creative ideas to life. I’m now looking for a full-time opportunity to contribute to innovative web development projects and continue growing as a professional in the tech industry.
+          </p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="home-image">
+          <img src="https://media.istockphoto.com/id/1451587807/vector/user-profile-icon-vector-avatar-or-person-icon-profile-picture-portrait-symbol-vector.jpg?s=612x612&w=0&k=20&c=yDJ4ITX1cHMh25Lt1vI1zBn2cAKKAlByHBvPJ8gEiIg=" alt="Priyank Bohra" width={250} height={250} />
+
+        </div>
+      </div>
+    </section>
   );
 }
