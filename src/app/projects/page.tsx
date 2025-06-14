@@ -11,7 +11,7 @@ export default function Projects() {
           <p>
             A web-based platform to help users learn programming through interactive courses, quizzes, and a responsive UI built with ReactJS. Features a clean, modular design focused on user-friendly navigation.
           </p>
-          <a href="https://github.com/Priyank-2005/CodeVerse">View Project</a>
+          <a href="https://code-verse-amw2.vercel.app/">View Project</a>
         </div>
 
         <div className="project-card">
